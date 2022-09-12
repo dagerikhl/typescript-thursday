@@ -12,11 +12,11 @@ const crashIfNotANumber = (value: any): true | never => {
   return crash();
 };
 
-it("Should", () => {
+it("Should not crash with a number", () => {
   expect(crashIfNotANumber(123)).toBe(true);
 });
 
-it("Should 2", () => {
+it("Should crash when given something other than a number", () => {
   expect(() => {
     crashIfNotANumber("Wololo");
   }).toThrow();
