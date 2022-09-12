@@ -55,6 +55,16 @@ Alias: `yarn s 01 03`
 
 Run the corresponding `*.solution.ts` file.
 
+# Further work
+
+If you complete the tutorial and all the exercises in this workshop, these are some useful resources to continue your TypeScript journey:
+
+- [TotalTypeScript Beginners tutorial](https://github.com/total-typescript/beginners-typescript-tutorial): Beginner level, may cover a lot of the same topics as this workshop.
+- [TotalTypeScript Advanced workshop](https://github.com/total-typescript/advanced-typescript-workshop): Advanced level, a good continuation of this workshop.
+- [TotalTypeScript Transformations workshop](https://github.com/total-typescript/type-transformations-workshop): Advanced level, a good continuation of this workshop, but with a specific focus.
+- [TotalTypeScript Generics workshop](https://github.com/total-typescript/typescript-generics-workshop): Advanced level, a good continuation of this workshop, but with a specific focus.
+- [Scrimba Learn TypeScript interactive course](https://scrimba.com/learn/typescript): Beginner level, may cover a lot of the same topics as this workshop.
+
 # Useful links
 
 - [TypeScript Tutorial](https://www.typescripttutorial.net/)
