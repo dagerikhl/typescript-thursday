@@ -20,7 +20,7 @@ Feel free to use another editor if you are more comfortable with that.
 
 The workshop is split into exercises. Each exercise is split into a `*.problem.ts` and a `*.solution.ts`.
 
-All the exercises are nested under sections. These sections refer to the sections in the [TypeScript Tutorial](https://www.typescripttutorial.net/)
+All the exercises are nested under sections. These sections refer to the sections in the [TypeScript Tutorial](https://www.typescripttutorial.net/), and each exercise correspons to a sub-section in that section. These are both reflected in the file and folder names.
 
 ### Workshop workflow
 
