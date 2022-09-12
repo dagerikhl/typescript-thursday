@@ -1,6 +1,6 @@
 import { expect, it } from "vitest";
 
-export const formatName = (firstName: string, lastName: string): string => {
+const formatName = (firstName: string, lastName: string): string => {
   return `${firstName} ${lastName}`;
 };
 
