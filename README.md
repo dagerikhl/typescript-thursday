@@ -1,0 +1,2 @@
+# typescript-thursday
+TypeScript workshop
