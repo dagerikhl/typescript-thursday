@@ -85,7 +85,7 @@ chokidar.watch(exerciseFile).on("all", (event, path) => {
     }
 
     console.log(
-      chalk.green("\nTypecheck complete. You finished the exercise! :D")
+      chalk.green("Typecheck complete. You finished the exercise! :D")
     );
 
     process.exit(0);
