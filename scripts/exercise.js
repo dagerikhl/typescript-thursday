@@ -60,15 +60,29 @@ chokidar.watch(exerciseFile).on("all", (event, path) => {
   try {
     console.clear();
 
-    if (containsVitest) {
-      console.log(chalk.blue("Running tests..."));
-      shell.exec(`vitest run "${exerciseFile}" --passWithNoTests`);
+    let testsHasFailed = false;
+    try {
+      if (containsVitest) {
+        console.log(chalk.blue("Running tests..."));
+        shell.exec(`vitest run "${exerciseFile}" --passWithNoTests`);
+      }
+    } catch (e) {
+      testsHasFailed = true;
     }
 
-    console.log(chalk.blue("Checking types...\n"));
-    shell.exec(
-      `tsc "${exerciseFile}" --moduleResolution node --target es2020 --noEmit --strict`
-    );
+    let typechecksHasFailed = false;
+    try {
+      console.log(chalk.blue("Checking types...\n"));
+      shell.exec(
+        `tsc "${exerciseFile}" --moduleResolution node --target es2020 --noEmit --strict`
+      );
+    } catch (e) {
+      typechecksHasFailed = true;
+    }
+
+    if (testsHasFailed || typechecksHasFailed) {
+      throw new Error();
+    }
 
     console.log(
       chalk.green("\nTypecheck complete. You finished the exercise! :D")
