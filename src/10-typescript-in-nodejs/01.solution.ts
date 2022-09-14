@@ -34,9 +34,13 @@ it("Should be completed", async () => {
   });
 
   console.log(
-    "For an example of a TypeScript app, check out the author's small component library"
+    "For an example of TypeScript apps, check out the examples that just opened up"
   );
 
   const open = require("open");
   await open("https://github.com/dagerikhl/primors");
+  await open(
+    "https://github.com/total-typescript/beginners-typescript-tutorial"
+  );
+  await open("https://github.com/dagerikhl/budgeteer");
 })();
