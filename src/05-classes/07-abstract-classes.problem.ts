@@ -43,7 +43,7 @@ it("Should be able to get all info of a progressive metal song", () => {
 
   expect(song.getInfo()).toStrictEqual({
     type: "progressive-metal",
-    name: "We are the sleep",
+    name: "We are the Sleep",
     length: 6.14,
     lyrics: "Grrrrrrrrrrr",
   });
